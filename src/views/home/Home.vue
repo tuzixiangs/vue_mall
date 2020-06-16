@@ -94,7 +94,7 @@ export default {
       const { data: res } = await this.$http.get("menus");
       if (res.meta.status != 200) return this.$message.error(res.meta.msg);
       this.menList = res.data;
-      console.log(res);
+      // console.log(res);
     },
     // 设置侧边栏切换隐藏
     toggleCollapse() {

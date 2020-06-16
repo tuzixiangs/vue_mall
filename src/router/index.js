@@ -6,6 +6,8 @@ const Login = () => import("../components/content/login/Login.vue");
 const Home = () => import("../views/home/Home.vue");
 const Welcome = () => import("../views/home/welcome/Welcome.vue");
 const User = () => import("../views/user/User.vue");
+const Rights = () => import("../views/home/rights/Rights.vue");
+const Roles = () => import("../views/home/roles/Roles.vue");
 
 const routes = [
 	{ path: "", redirect: "/login" },
@@ -17,6 +19,8 @@ const routes = [
 		children: [
 			{ path: "/welcome", component: Welcome },
 			{ path: "/users", component: User },
+			{ path: "/rights", component: Rights },
+			{ path: "/roles", component: Roles },
 		],
 	},
 ];
