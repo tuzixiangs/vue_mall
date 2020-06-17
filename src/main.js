@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 import "./plugins/element.js";
 import "assets/css/global.css";
+import ZkTable from "vue-table-with-tree-grid";
 
 // 设置默认的请求根路径
 import axios from "axios";
@@ -16,6 +17,7 @@ axios.interceptors.request.use((config) => {
 Vue.prototype.$http = axios;
 
 Vue.config.productionTip = false;
+Vue.component("tree-table", ZkTable);
 
 new Vue({
 	router,
