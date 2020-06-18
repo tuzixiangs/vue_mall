@@ -338,8 +338,7 @@ export default {
       // 重新渲染页面
       this.getGoodsCategories();
     }
-
-    // 删除按钮事件按钮开始
+    // 删除按钮事件按钮结束
   }
 };
 </script>
