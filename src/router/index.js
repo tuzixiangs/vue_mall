@@ -12,6 +12,7 @@ const Cate = () => import("../views/goods/cate/Cate.vue");
 const Params = () => import("../views/goods/params/Params.vue");
 const GoodsList = () => import("../views/goods/goodsList/GoodsList.vue");
 const AddPage = () => import("../views/goods/goodsList/AddPage.vue");
+const Order = () => import("../views/home/order/Order.vue");
 
 const routes = [
 	{ path: "", redirect: "/login" },
@@ -29,6 +30,7 @@ const routes = [
 			{ path: "/params", component: Params },
 			{ path: "/goods", component: GoodsList },
 			{ path: "/goods/add", component: AddPage },
+			{ path: "/orders", component: Order },
 		],
 	},
 ];

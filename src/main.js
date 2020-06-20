@@ -25,8 +25,8 @@ import "quill/dist/quill.bubble.css"; // for bubble theme
 // 将富文本编辑器注册未全局可用的组件
 Vue.use(VueQuillEditor);
 
-// 导入树形表格
 Vue.config.productionTip = false;
+// 导入树形表格
 Vue.component("tree-table", ZkTable);
 // 定义的全局时间过滤器
 Vue.filter("dateFormat", function(originVal) {
