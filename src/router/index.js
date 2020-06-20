@@ -13,6 +13,7 @@ const Params = () => import("../views/goods/params/Params.vue");
 const GoodsList = () => import("../views/goods/goodsList/GoodsList.vue");
 const AddPage = () => import("../views/goods/goodsList/AddPage.vue");
 const Order = () => import("../views/home/order/Order.vue");
+const Report = () => import("../views/home/report/Report.vue");
 
 const routes = [
 	{ path: "", redirect: "/login" },
@@ -31,6 +32,7 @@ const routes = [
 			{ path: "/goods", component: GoodsList },
 			{ path: "/goods/add", component: AddPage },
 			{ path: "/orders", component: Order },
+			{ path: "/reports", component: Report },
 		],
 	},
 ];
